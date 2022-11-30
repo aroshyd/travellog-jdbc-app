@@ -1,0 +1,128 @@
+databaseChangeLog:
+  - changeSet:
+      id: travel
+      author: postgres
+##      runAlways: true
+      comment: "Create initial travelLogs"
+      changes:
+        - insert:
+            tableName: travel_log
+            columns:
+              - column:
+                  name: date
+                  value: "2020-09-01"
+              - column:
+                  name: vehicle_reg_number
+                  value: "01J472UA"
+              - column:
+                  name: vehicle_owner_name
+                  value: "Abdu"
+              - column:
+                  name: odometer_begin
+                  value: "100"
+              - column:
+                  name: odometer_end
+                  value: "1000"
+              - column:
+                  name: route
+                  value: "Alisher Navoiy"
+              - column:
+                  name: journey_description
+                  value: "lorem ipsum"
+        - insert:
+            tableName: travel_log
+            columns:
+              - column:
+                  name: date
+                  value: "2021-09-01"
+              - column:
+                  name: vehicle_reg_number
+                  value: "01J471UA"
+              - column:
+                  name: vehicle_owner_name
+                  value: "Abdu"
+              - column:
+                  name: odometer_begin
+                  value: "1001"
+              - column:
+                  name: odometer_end
+                  value: "1090"
+              - column:
+                  name: route
+                  value: "Alisher Navoiy"
+              - column:
+                  name: journey_description
+                  value: "lorem ipsum"
+        - insert:
+            tableName: travel_log
+            columns:
+              - column:
+                  name: date
+                  value: "2021-02-01"
+              - column:
+                  name: vehicle_reg_number
+                  value: "01J471UA"
+              - column:
+                  name: vehicle_owner_name
+                  value: "Abdulloh"
+              - column:
+                  name: odometer_begin
+                  value: "10011"
+              - column:
+                  name: odometer_end
+                  value: "10901"
+              - column:
+                  name: route
+                  value: "Alisher Navoiy"
+              - column:
+                  name: journey_description
+                  value: "lorem ipsum"
+
+        - insert:
+            tableName: travel_log
+            columns:
+              - column:
+                  name: date
+                  value: "2022-02-01"
+              - column:
+                  name: vehicle_reg_number
+                  value: "01J470UA"
+              - column:
+                  name: vehicle_owner_name
+                  value: "Abdulloh"
+              - column:
+                  name: odometer_begin
+                  value: "1011"
+              - column:
+                  name: odometer_end
+                  value: "10901"
+              - column:
+                  name: route
+                  value: "Tashkent"
+              - column:
+                  name: journey_description
+                  value: "lorem ipsum"
+        - insert:
+            tableName: travel_log
+            columns:
+              - column:
+                  name: date
+                  value: "2019-02-01"
+              - column:
+                  name: vehicle_reg_number
+                  value: "01J472UA"
+              - column:
+                  name: vehicle_owner_name
+                  value: "Abdu"
+              - column:
+                  name: odometer_begin
+                  value: "100"
+              - column:
+                  name: odometer_end
+                  value: "500"
+              - column:
+                  name: route
+                  value: "Samarqand"
+              - column:
+                  name: journey_description
+                  value: "lorem ipsum"

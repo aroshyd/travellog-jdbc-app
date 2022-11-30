@@ -1,0 +1,41 @@
+databaseChangeLog:
+#  - logicalFilePath: db/changes/changelog/create-travel-log-table-changelog.yaml
+  - changeSet:
+      id: travel
+      author: postgres
+##      runAlways: true
+      validCheckSum: any
+      changes:
+#        - dropTable:
+#            tableName: travel_log
+        - createTable:
+            tableName: travel_log
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: date
+                  type: date
+              - column:
+                  name: vehicle_reg_number
+                  type: varchar(12)
+              - column:
+                  name: vehicle_owner_name
+                  type: varchar(50)
+              - column:
+                  name: odometer_begin
+                  type: BIGINT
+              - column:
+                  name: odometer_end
+                  type: BIGINT
+              - column:
+                  name: route
+                  type: varchar(255)
+              - column:
+                  name: journey_description
+                  type: varchar(512)
